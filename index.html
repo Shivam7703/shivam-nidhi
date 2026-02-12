@@ -294,7 +294,27 @@
   <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7164.680427502162!2d83.849886!3d26.120448!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399237b864022e1d%3A0x1a54e6616c15e564!2sRadhika%20Marriage%20hall!5e0!3m2!1sen!2sin!4v1766848282912!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
 <div class=" p-6 text-center text-white sm:text-xl font-semibold">Your gracious presence will add charm to this joyous occasion and bless the newlywed couple with your warm wishes.</div>
 <p class="text-white text-center font-medium p-6"><a href="tel:+918218885483">Contact on 8218885483 for creating your own website at reasonable price.</a></p> <br><br>
+
+<audio id="bgMusic" loop>
+  <source src="img/song.mp3" type="audio/mpeg">
+</audio>
+
 </body>
+<script>
+window.addEventListener("load", function () {
+  const audio = document.getElementById("bgMusic");
+
+  // Try autoplay
+  audio.play();
+  audio.loop()
+
+  // if (playPromise !== undefined) {
+  //   playPromise.catch(error => {
+  //     console.log("Autoplay blocked. Waiting for user interaction.");
+  //   });
+  // }
+});
+</script>
 <script>
   const img = document.getElementById("parallaxImg");
 
@@ -405,5 +425,4 @@
 
 
 </html>
-
 
