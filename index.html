@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="output.css">
 </head>
 
-<body class="bg-[#030015] text-white">
+<body class="bg-[#030015] text-white " id="body">
 
   <canvas id="universe"></canvas>
   <header class="pt-8 w-full text-center text-white md:text-2xl text-xl mantrafont font-medium">ॐ श्री गणेशाय नमः
@@ -301,19 +301,13 @@
 
 </body>
 <script>
-window.addEventListener("load", function () {
-  const audio = document.getElementById("bgMusic");
+const body = document.getElementById("body");
+const audio = document.getElementById("bgMusic");
 
-  // Try autoplay
-  audio.play();
-  audio.loop()
-
-  // if (playPromise !== undefined) {
-  //   playPromise.catch(error => {
-  //     console.log("Autoplay blocked. Waiting for user interaction.");
-  //   });
-  // }
-});
+body.addEventListener("click", () => {
+  audio.loop = true;   // set loop
+  audio.play();        // play audio
+}, { once: true }); 
 </script>
 <script>
   const img = document.getElementById("parallaxImg");
